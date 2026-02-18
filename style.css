@@ -135,3 +135,50 @@ footer {
   color: #4b2e83;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
+
+/* FULL DOODLE BACKGROUND */
+
+body::before {
+  content: "✿ ♡ ✦ ☁ ✧ ✿ ♡ ✦ ☁ ✧";
+  position: fixed;
+  top: 0;
+  left: 0;/* MOBILE OPTIMIZATION */
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .description {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .year-buttons a {
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+    font-size: 1.1em;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 85%;
+  }
+}
+  width: 200%;
+  height: 200%;
+  font-size: 40px;
+  opacity: 0.08;
+  line-height: 120px;
+  word-spacing: 80px;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(-15deg);
+}
+
